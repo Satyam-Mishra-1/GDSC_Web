@@ -1,0 +1,503 @@
+/*--------------------------------------Navigation bar -----------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,h3,a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+
+/* Define the centered box styles */
+.centered-box {
+    width: 412px;
+    height: 58px;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center; /* Center text horizontally */
+}
+
+/* Define text color class */
+.custom-text {
+    display: inline-block;
+}
+
+/* Define text color */
+.red-text {
+    color: #646464;
+}
+
+/* Define group styles */
+.group {
+    width: 100%; /* Full width */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Define paragraph styles */
+.p {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+/* Define button styles */
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 15px 32px;
+    width: 145px;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto; /* Center the button horizontally */
+}
+
+/* Define container styles */
+.container {
+    text-align: center; /* Center all content horizontally */
+}
+
+/* Define missions section styles */
+/* Define missions section styles */
+.c2 {
+    margin-top: 20px;
+    display: flex; /* Enable flexbox for horizontal layout */
+    justify-content: space-between; /* Space elements evenly horizontally */
+    align-items: center; /* Center elements vertically */
+}
+
+/* Define styles for left and right columns in missions section */
+.l, .r {
+    flex: 1; /* Both columns take equal horizontal space */
+    text-align: center;
+    margin-top: 20px;
+    font-family:"Product Sans Medium";
+    font-size: 30px;
+}
+
+.a1 {
+    font-family: "Google Sans";
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    color: #646464;
+}
+
+.b1 {
+    font-family: "Google Sans";
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    color: #646464;
+}
+
+.c1 {
+    font-family: "Google Sans";
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    color: #646464;
+}
+
+.v1 {
+    border-left: 8px solid blue; /* Increase the border width and set a darker color */
+    height: 200px; /* Set the height of the line */
+    border-radius: 15px;
+}
+
+.v2 {
+    border-right: 8px solid green; /* Increase the border width and set a darker color */
+    height: 200px; /* Set the height of the line */
+    border-radius: 15px;
+}
+
+.v3 {
+    border-right: 8px solid orangered; /* Increase the border width and set a darker color */
+    height: 200px; /* Set the height of the line */
+    border-radius: 15px;
+}
+
+.vertical {
+    border-left: 8px solid #333; /* Increase the border width and set a darker color */
+    height: 100px; /* Set the height of the line */
+    border-radius: 10px;
+}
+
+.bor {
+    display: flex;
+}
+
+.bor1 {
+    margin: 5% 5% 15% 5%;
+    flex: 1;
+    border-top: 8px solid orangered; /* Increase the border width and set a darker color */
+    width: 1%;
+    border-radius: 5px;
+}
+
+.bor2 {
+    margin: 5% 5% 15% 5%;
+    flex: 1;
+    border-top: 8px solid orangered; /* Increase the border width and set a darker color */
+    border-radius: 5px;
+}
+
+
+.tec {
+    margin-top: 10px;
+    font-family: "Google Sans";
+    font-size: 70px;
+}
+
+.t1 {
+    font-size: 32px;
+}
+
+
+/* -------------------------------------Image Slider --------------------------------*/
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Initially hide the information */
+.info {
+    display: none;
+  }
+  
+  /* Fixed height for the slideshow container */
+  .slideshow-container {
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  /* Rest of your existing CSS styles */
+
+  
+  .slide-down {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+
+  /*------------------------------------ Style for the FAQ container --------------------------------*/
+  /* Style for the FAQ container */
+
+
+
+/* Style for the FAQ container */
+.faq {
+    display: flex;
+    flex-direction: column; /* Display question and answer in a column */
+    align-items: center; /* Center-align content horizontally */
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Style for the plus/minus icon */
+.plus-minus {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 10px;
+}
+
+/* Style for the open answer */
+.faq-answer {
+    display: none;
+    text-align: center;
+}
+
+/* Style for the open answer */
+.faq-answer.open {
+    display: block;
+    margin-top: 10px; /* Add spacing between question and answer */
+}
+
+.f1 {
+    font-family: "Google Sans";
+    font-size: 34px;
+}
+
+.f1a {
+    font-family: "Google Sans";
+    font-size: 25px;
+}
+
+.d1 {
+    border-left: 8px solid red;
+    border-right: 8px solid red;
+}
+
+.d2 {
+    border-left: 8px solid green;
+    border-right: 8px solid green;
+}
+
+.d3 {
+    border-left: 8px solid blue;
+    border-right: 8px solid blue;
+}
+
+.d4 {
+    border-left: 8px solid orange;
+    border-right: 8px solid orange;
+}
+
+
+.man {
+    display: flex;
+    border-radius: 45px 45px 0 0;
+    background-color: blue;
+    height: 250px;
+}
+
+.div11 {
+    padding: 50px;
+    width: 30%;
+    margin-right: 5px;
+    flex: 1; /* Both columns take equal horizontal space */
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family:"Product Sans Medium";
+    font-size: 30px;
+    border: 1px solid #ccc;
+}
+
+
+/*--------------------------------------------Mobile--------------------------------------*/
+@media (min-width: 390px) {
+    .logo a,
+    .main-nav a {
+      padding: 8px 12px;
+      font-size: 0.8em;
+    }
+  
+    .main-nav {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .main-nav a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    .main-nav li {
+        display: inline-block;
+        margin-right: 10px;
+        white-space: nowrap; /* Prevent line wrapping */
+    }
+    .i1 {
+        width: 100%;
+    }
+    .custom-text {
+        font-size: 45px;
+    }
+    .p {
+        font-size: 23px;
+    }
+
+
+    /* Media query for screens with a maximum width of 390px */
+    .centered-box {
+        width: 100%; /* Full width */
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .group {
+        margin-top: 10px;
+    }
+
+    .p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .c2 {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .l, .r {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .a1, .b1, .c1 {
+        font-size: 30px;
+    }
+
+    .v1, .v2, .v3 {
+        height: 100px;
+        border-radius: 10px;
+    }
+
+    .bor {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .bor1, .bor2 {
+        margin: 5% 0;
+        width: 100%; /* Full width */
+    }
+
+    .tec {
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    .t1 {
+        font-size: 18px;
+    }
+     .i2 {
+        width:300%;
+        padding-right: 10px;
+     }
+     .div11 {
+        font-size: 20px;
+     }
+
+
+
+
+
+
+
+  }
+

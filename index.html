@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The GDSC Page</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header class="header">
+		<h1 class="logo"><a href="#">GDSC</a></h1>
+      <ul class="main-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Alumani</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+	</header>  
+   
+
+    <img class="i1" src="img1.png" alt="GoogleDeveloperStudentClubs" style="margin-top: 10px" width="98%">
+    <div class="container">
+        <div class="centered-box">
+            <span class="custom-text red-text">RCOEM Chapter</span>
+        </div>
+        <div class="group">
+            <div>
+                <img class="i1" src="img2.png" alt="Group image" width="98%">
+            </div>
+            <div class="para">
+                <p class="p">Google Developer Student Clubs are community groups for College and University Students interested in Google developer technologies.</p>
+            </div>
+            <div class="b1">
+                <button onclick="GetToKnow()" class="btn">Join Us</button>
+            </div>
+        </div>
+
+        <!-- Missions section -->
+        <h1 class="a1">OUR Mission</h1>
+        <div class="c2">
+            <div class="l">
+                <img class="i1" src="img3.png" alt="Missions image">
+            </div>
+            <div class="r v1">
+                <p>Our mission involves community engagement, leadership development, building a strong tech foundation, while enabling all tech enthusiasts to contribute to the global society.</p>
+            </div>
+        </div>
+        
+        <h1 class="b1">OUR Perspective</h1>
+        <div class="c2">
+            <div class="r v2">
+                <p>We’re a community-driven initiative aiming to bridge the gap between research and practice , develop evolutionary thinking and network throughout the process. We believe in connecting fellow developers , spreading stimulative ideas and working for a solution driven team.</p>
+            </div>
+            <div class="l">
+                <img class="i1" src="img4.png" alt="Missions image">
+            </div>
+        </div>
+
+        <h1 class="c1">What Keeps On Going ?</h1>
+        <div class="c2">
+            <div class="l">
+                <img class="i1" src="img5.png" alt="Missions image">
+            </div>
+            <div class="r v3">
+                <p>Our club helps students to connect, learn, empower and grow. Teamwork, innovative thinking, communication, and leading with solutions is what helps us achieve new heights.
+                    The entire team works in coordination, to inspire and motivate the upcoming coding community to evolve their skills and broaden their horizons of knowledge.</p>
+            </div>
+        </div>
+        <img class="i1" src="img6.png" alt="Statastic Of GDSC">
+
+        
+
+        <div class="bor">
+            <div class="bor1"></div>
+            <div class="tec">Technologies
+            <div class="t1">Domains That Excite Us to Collaborate and Teach!</div>
+            </div>
+            <div class="bor2"></div>
+        </div>
+
+        
+
+        <div class="slideshow-container" onmouseover="pauseRotation()" onmouseout="resumeRotation()">
+            <div class="mySlides fade">
+              <div class="info">
+                <h3>Android </h3>
+                <p class="slide-down">Here WE Learn About Android Development</p>
+              </div>
+              <img src="img7.png" alt="Image 1">
+              <a class="arrow" onclick="toggleInfo(0)">💖</a>
+            </div>
+            <div class="mySlides fade">
+                <div class="info">
+                  <h3>Flutter</h3>
+                  <p class="slide-down">This is the first image in the slider.</p>
+                </div>
+                <img src="img8.png" alt="Image 1">
+                <a class="arrow" onclick="toggleInfo(0)">💖</a>
+              </div>
+              <div class="mySlides fade">
+                <div class="info">
+                  <h3>Google Cloud</h3>
+                  <p class="slide-down">This is the first image in the slider.</p>
+                </div>
+                <img src="img9.png" alt="Image 1">
+                <a class="arrow" onclick="toggleInfo(0)">💖</a>
+              </div>
+              <div class="mySlides fade">
+                <div class="info">
+                  <h3>BlockChain Technology</h3>
+                  <p class="slide-down">This is the first image in the slider.</p>
+                </div>
+                <img src="img10.jpg" alt="Image 1">
+                <a class="arrow" onclick="toggleInfo(0)">💖</a>
+              </div>
+              <div class="mySlides fade">
+                <div class="info">
+                  <h3>Artificial Interligent</h3>
+                  <p class="slide-down">This is the first image in the slider.</p>
+                </div>
+                <img src="img11.jpg" alt="Image 1">
+                <a class="arrow" onclick="toggleInfo(0)">💖</a>
+              </div>
+            <!-- Add similar content for other images -->
+            <a class="prev" onclick="plusSlides(-1)">⏮</a>
+            <a class="next" onclick="plusSlides(1)">⏭</a>
+          </div>
+
+<!---------------------------------------FAQS__________________________________________-->
+          <h1><center>FAQ'S</center></h1>
+
+
+          <div>
+            <div class="faq d1">
+                <div class="faq-question">
+                    <div class="plus-minus" onclick="toggleFaq(this)">+</div>
+                    <h3 class="f1">What is GDSC?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p class="f1a">Google Developer Student Clubs (GDSC) are community groups for college and university students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</p>
+                </div>
+            </div>
+            <div class="faq d2">
+                <div class="faq-question">
+                    <div class="plus-minus" onclick="toggleFaq(this)">+</div>
+                    <h3 class="f1">How can you become a part of GDSC ?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p class="f1a">We conduct an annual team recruitment process. The details of recruitment are posted online a few weeks prior. It’s a two step process involving form filling and personal interview. Students acing both rounds are selected to be the part of the core team.</p>
+                </div>
+            </div>
+            <div class="faq d3">
+                <div class="faq-question">
+                    <div class="plus-minus" onclick="toggleFaq(this)">+</div>
+                    <h3 class="f1">What does a GDSC Lead do?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p class="f1a">A GDSC Lead fills a lot of shoes. He works with the university to build the club, recruit the core team, host workshops, build projects, collaborate with local partners.</p>
+                </div>
+            </div>
+            <div class="faq d4">
+                <div class="faq-question">
+                    <div class="plus-minus" onclick="toggleFaq(this)">+</div>
+                    <h3 class="f1">How is GDSC related to Google?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p class="f1a">A GDSC Lead fills a lot of shoes. He works with the university to build the club, recruit the core team, host workshops, build projects, collaborate with local partners.</p>
+                </div>
+            </div>
+            <div class="faq d1">
+                <div class="faq-question">
+                    <div class="plus-minus" onclick="toggleFaq(this)">+</div>
+                    <h3 class="f1">How to reach us?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p class="f1a">Mail us at "gdsc.rknec@gmail.com "</p>
+                </div>
+            </div>
+          </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+<footer>
+    <div class="man">
+        <div class="div11">
+                <img src="img12.png" alt="GDSC" weidth="945" height="120px">
+        </div>
+        <div class="div11">
+            <table>
+                <tr><img  src="img13.png" alt="GDSC"  height="85px"></tr>
+                <tr><img   src="img14.png" alt="GDSC" height="70px"></tr>
+            </table>
+        </div>
+        <div class="div11">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</html>
